@@ -6,7 +6,7 @@ from random import randint
 #logger = logging.getLogger(__name__)
 logger = logging.getLogger("app")
 logger.setLevel(logging.DEBUG)
-handler = logging.FileHandler('elvis.json')
+handler = logging.FileHandler('elvis.log')
 handler.setFormatter(ecs_logging.StdlibFormatter())
 logger.addHandler(handler)
 
