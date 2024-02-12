@@ -34,10 +34,14 @@ while True:
         random1 = 0
     if(random1<=4):
         logger.info(messages[random1], extra={"http.request.body.content": messages[random1]})
+        print("INFO: " + messages[random1])
     elif(random1>=5 and random1<=8):
         logger.warning(messages[random1], extra={"http.request.body.content": messages[random1]})
+        print("Warning: " + messages[random1])
     elif(random1>=9 and random1<=10):
         logger.error(messages[random1], extra={"http.request.body.content": messages[random1]})
+        print("Error: " + messages[random1])
     else:
         logger.critical(messages[random1], extra={"http.request.body.content": messages[random1]})
+        print("Critical: " + messages[random1])
     time.sleep(random2)
