@@ -29,7 +29,7 @@ messages = [
 
 while True:
     random1 = randint(0,15)
-    random2 = randint(1,10)
+    random2 = randint(2)
     if random1 > 11:
         random1 = 0
     if(random1<=4):
